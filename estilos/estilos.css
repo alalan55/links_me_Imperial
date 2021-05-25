@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background: url(https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) no-repeat;
+  background-size: cover;
+}
+
+.container .elementos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+
+.container .elementos .profile {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.container .elementos .profile img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.container .elementos .name {
+  margin: .8em 0;
+}
+
+.container .elementos .name span {
+  color: white;
+}
+
+.container .elementos .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin-top: 2em;
+}
+
+.container .elementos .links a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 2em;
+  margin: 1em 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  border-radius: 10px;
+}
+
+.container .elementos .links a:hover {
+  background-color: rgba(206, 205, 205, 0.95);
+}
+
+@media screen and (max-width: 400px) {
+  .links a {
+    padding: 1em !important;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
